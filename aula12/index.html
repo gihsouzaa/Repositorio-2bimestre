@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Avaliacao da Feira da Reforma</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <h1>Avalie nossa Feira</h1>
+    <form id="formCadastro">
+        <label>Nome do participante</label>
+        <input type="text" id="inputNome" placeholder="Digite seu nome">
+        <span id="erroNome" class="erro oculto">Nome obrigatorio</span>
+
+        <label>E-mail</label>
+        <input type="email" id="inputEmail" placeholder="seu@email.com">
+        <span id="erroEmail" class="erro oculto">E-mail invalido</span>
+
+        <label>Nota da Feira (1 a 10)</label>
+        <input type="text" id="inputNota" placeholder="Digite um numero de 1 a 10">
+        <span id="erroNota" class="erro oculto">Nota entre 1 e 10</span>
+
+        <label>Deixe seu comentario sobre ela</label> <!-- adapte -->
+        <textarea id="inputComentario" placeholder="Escreva sua opiniao..."></textarea>
+        <span id="contadorChars" class="contador">0 / 200</span>
+        <span id="erroComentario" class="erro oculto">Minimo 10
+            caracteres</span>
+
+        <button type="submit">Enviar</button>
+
+    </form>
+    <script src="app.js"></script>
+</body>
+
+</html>
