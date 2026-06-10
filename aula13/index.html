@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Cadastro de Endereco Residencial </title> <!-- adapte -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Preencha seu endereco residencial </h1> <!-- adapte -->
+    <form id="formCadastro">
+        <label>CEP</label>
+        <input type="text" id="inputCEP" placeholder="00000000" maxlength="8">
+        <span id="statusCEP" class="status"></span>
+        <span id="erroCEP" class="erro oculto">CEP invalido</span>
+        <label>Logradouro</label>
+        <input type="text" id="logradouro" readonly placeholder="Preenchido automaticamente">
+        <label>Bairro</label>
+        <input type="text" id="bairro" readonly placeholder="Preenchido automaticamente">
+        <label>Cidade</label>
+        <input type="text" id="cidade" readonly placeholder="Preenchido automaticamente">
+        <label>UF</label>
+        <input type="text" id="uf" readonly placeholder="UF" maxlength="2" style="width:60px">
+
+        <label>Numero</label>
+        <input type="text" id="inputNumero" placeholder="Ex: 123">
+        <span id="erroNumero" class="erro oculto">Numero obrigatorio</span>
+        <label>Complemento (opcional)</label>
+        <input type="text" id="inputComplemento" placeholder="Apto, Bloco...">
+        <button type="submit">Confirmar endereco</button>
+    </form>
+    <script src="app.js"></script>
+</body>
+
+</html>
